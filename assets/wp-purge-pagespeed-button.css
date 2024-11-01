@@ -1,0 +1,47 @@
+#wp-admin-bar-pagespeed_purge > a::after {
+  margin: 5px;
+  content: " ";
+  font-family: dashicons;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: inherit;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+  text-align: center;
+  -webkit-transition: color .1s ease-in 0;
+  transition: color .1s ease-in 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+#wp-admin-bar-pagespeed_purge > a.spin::after {
+  content: "\f463";
+  -webkit-animation: animate-spin 1s infinite;
+  animation: animate-spin 1s infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+#wp-admin-bar-pagespeed_purge > a.success::after {
+  content: "\f147"; }
+
+#wp-admin-bar-pagespeed_purge > a.error::after {
+  content: "\f158"; }
+
+@-webkit-keyframes animate-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes animate-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
